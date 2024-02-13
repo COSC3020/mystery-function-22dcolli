@@ -11,3 +11,4 @@ function mystery(a) {
     else return a[0];
 }
 ```
+ANSWER: This code will always output the largest integer in the array. Recursively the code starts segmenting the initial array down into smaller sub-arrays until it reaches the base case. It then checks the prior value of foo to element 1 in the smaller sub-array. If the value is greater than the value of foo, that new value becomes foo itself. This process repeats for the other larger sub-arrays looking for the largest foo value. In the end the the largest integer will always be outputted.
